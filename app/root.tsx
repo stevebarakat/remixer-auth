@@ -8,9 +8,24 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import globalStylesUrl from "~/styles/global.css";
+
+export const links = () => {
+  return [
+    {
+      rel: "stylesheet",
+      href: "https://meyerweb.com/eric/tools/css/reset/reset.css",
+    },
+    {
+      rel: "stylesheet",
+      href: globalStylesUrl,
+    },
+  ];
+};
+
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Remixer",
   viewport: "width=device-width,initial-scale=1",
 });
 
