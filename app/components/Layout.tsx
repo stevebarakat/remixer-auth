@@ -11,13 +11,13 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <header>
-        <h1>Kudos App</h1>
+        <h1>Remixer</h1>
         <form action="/logout" method="post">
           <button type="submit">Sign Out</button>
         </form>
       </header>
       {children}
-      <footer>@copy2022 kudos app</footer>
+      <footer>footer</footer>
     </div>
   );
 }

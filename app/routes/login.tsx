@@ -137,13 +137,11 @@ export default function Login() {
           {action === "login" ? "Sign Up" : "Sign In"}
         </button>
 
-        <h2 className="text-5xl font-extrabold text-yellow-300">
-          Welcome to Kudos!
-        </h2>
+        <h2 className="text-5xl font-extrabold text-yellow-300">Remixer</h2>
         <p className="font-semibold text-slate-300">
           {action === "login"
-            ? "Log In To Give Some Praise!"
-            : "Sign Up To Get Started!"}
+            ? "Log In To Save Your Mixes"
+            : "Sign Up To Get Started"}
         </p>
         <form method="POST" className="rounded-2xl bg-gray-200 p-6 w-96">
           <div className="text-xs font-semibold text-center tracking-wide text-red-500 w-full">
